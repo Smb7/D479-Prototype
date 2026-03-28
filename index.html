@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Taniti — Your Island Escape</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Visit <span>Taniti</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Global Search Bar (User 3 feedback) -->
+      <form class="nav-search" role="search">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" placeholder="Search Taniti…" aria-label="Search" />
+      </form>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <!--
+      PHOTO PLACEHOLDER — Home Hero
+      Replace the div below with:
+        <img src="images/hero-beach.jpg" alt="Taniti beach panorama" class="hero-img" />
+    -->
+    <img src="Images/IndexHero.jpeg" alt="Taniti beach panorama" class="hero-img" />
+
+    <div class="hero-overlay">
+      <h1>Discover the Magic of Taniti</h1>
+      <p>Pristine beaches, lush rainforests, vibrant culture — your perfect island getaway awaits.</p>
+      <a href="travel.html" class="btn btn-primary">Start Planning</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Taniti</h2>
+        <p>A small, warm island in the Pacific where adventure meets relaxation.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+        <!-- PHOTO PLACEHOLDER — About image -->
+        <img src="Images/IndexAbout.jpeg" alt=Taniti island view" />
+        <div>
+          <p style="color:var(--text-mid);font-size:1.05rem;line-height:1.8;margin-bottom:1rem;">
+            Taniti is a small, tropical island in the Pacific. While the island has an area of less than
+            500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small
+            but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small,
+            active volcano.
+          </p>
+          <p style="color:var(--text-mid);font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem;">
+            Taniti has an indigenous population of about 20,000. Until a recent increase in tourism,
+            most of the Tanitian economy was dominated by fishing or agriculture. The island is now
+            welcoming visitors while carefully preserving its unique landscape and culture.
+          </p>
+          <a href="experience.html" class="btn btn-ocean">Explore Experiences</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HIGHLIGHTS CARDS ===== -->
+  <section class="section section-sand">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Visit Taniti?</h2>
+        <p>Three reasons our visitors keep coming back.</p>
+      </div>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-img">
+            <!-- Replace with: <img src="images/highlight-beach.jpg" alt="Beach" /> -->
+            <img src="Images/IndexBeach.jpeg" alt="Beach" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3>Pristine Beaches</h3>
+            <p>Miles of white sand, crystal-clear water, and very few crowds — just the way you like it.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#6ab04c,#2d6a4f);">
+            <img src="Images/IndexForest.jpeg" alt="Rainforest">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Adventure</span>
+            <h3>Rainforest Exploration</h3>
+            <p>Zip-line through jungle canopy, hike to volcanic peaks, or kayak along hidden river trails.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#f9a825,#e64a19);">
+            <img src="Images/IndexFood.jpeg" alt="Local culture" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Culture</span>
+            <h3>Local Cuisine &amp; Culture</h3>
+            <p>Sample fresh seafood, tropical fruits, and the warm hospitality of Tanitian locals.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMON QUESTIONS — Accordion (User 3 feedback) ===== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>Common Questions</h2>
+        <p>Everything you need to know before you arrive.</p>
+      </div>
+
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            How do I get to Taniti?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Almost all visitors arrive by air. Taniti is served by a small airport that can accommodate small jets and propeller planes — the airport is currently being expanded so larger jets will be able to land within the next few years. Some visitors also arrive on a small cruise ship that docks in Yellow Leaf Bay once per week. See our <a href="travel.html" style="color:var(--ocean);">Travel page</a> for full details.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            What currency is used on the island?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Taniti uses the U.S. dollar as its official currency. However, many businesses also accept euros and yen. Several banks on the island facilitate currency exchange, and major credit cards are widely accepted at hotels, restaurants, and larger shops.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            What language is spoken in Taniti?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Many younger Tanitians speak fluent English, especially in Taniti City and tourist areas. However, very little English is spoken in rural areas, particularly by older residents. A translation app or phrasebook can be helpful if you plan to explore off the beaten path.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Is Taniti safe for tourists?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Violent crime is very rare on Taniti. However, as tourism has increased, there are more reports of pickpocketing and other petty crimes. We recommend keeping valuables secure and being aware of your surroundings in crowded areas, as you would in any tourist destination.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Are there medical facilities on the island?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Yes. There is one hospital and several clinics on Taniti. The hospital has many multilingual employees, so language should not be a barrier in an emergency. Travel insurance with medical coverage is always recommended.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            What are the alcohol and drinking laws?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            The legal drinking age on Taniti is 18, though enforcement is not always strict. Alcohol may not be served or sold between midnight and 9:00 a.m. Please drink responsibly and be aware that some attractions and restaurants may be closed during national holidays.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            What are the power outlets like?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Power outlets on Taniti are 120 volts — the same standard used in the United States. Travelers from other countries may need a voltage adapter or converter for their devices.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Should I be aware of any national holidays?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            Taniti observes a large number of national holidays. Many tourist attractions and restaurants will be closed on these days, so it is important to plan accordingly. We recommend checking with your hotel or the tourism office about upcoming holidays during your visit.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Visit <span>Taniti</span></div>
+        <p style="font-size:0.88rem;margin-top:0.5rem;max-width:280px;">
+          The official tourism board of Taniti Island. Inspiring travel, preserving paradise.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="stay.html">Stay</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Taniti Tourism Board. All rights reserved.
+      <br>All images on this site are AI-generated. Source: Google Gemini (AI image generator), retrieved March 27, 2026.
+    </div>
+  </footer>
+
+  <script src="accordion.js"></script>
+</body>
+</html>

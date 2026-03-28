@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Visit Taniti</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Visit <span>Taniti</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <form class="nav-search" role="search">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" placeholder="Search Taniti…" aria-label="Search" />
+      </form>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <img src="Images/ExperienceHero.jpeg" alt="Taniti experiences" style="object-position: center 50%;" />
+    <div class="page-hero-overlay">
+      <h1>Experiences</h1>
+      <p>Food, entertainment, and sightseeing — there's something for everyone</p>
+    </div>
+  </section>
+
+  <!-- ===== TABBED EXPERIENCE GRID (User 2 feedback — replaces carousel) ===== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <h2>What to Do in Taniti</h2>
+        <p>Browse by category to find your perfect experience.</p>
+      </div>
+
+      <!-- Tab buttons -->
+      <div class="experience-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="food"          role="tab" aria-selected="true">Food &amp; Dining</button>
+        <button class="tab-btn"        data-tab="entertainment" role="tab" aria-selected="false">Entertainment</button>
+        <button class="tab-btn"        data-tab="sightseeing"   role="tab" aria-selected="false">Sightseeing</button>
+      </div>
+
+      <!-- ===== FOOD TAB ===== -->
+      <div class="tab-content active" id="tab-food" role="tabpanel">
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#f9a825,#e64a19);">
+            <img src="Images/ExperienceLocal.jpeg" alt="Local fish and rice" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Local Cuisine</span>
+            <h3>Local Fish &amp; Rice Restaurants</h3>
+            <p>Five of Taniti's ten restaurants focus on the island's fishing heritage, serving freshly caught fish and rice prepared in traditional Tanitian style. Simple, authentic, and delicious.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#dfe6e9,#74b9ff);">
+            <img src="Images/ExperienceDinner.jpeg" alt="American-style dining" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">American</span>
+            <h3>American-Style Dining</h3>
+            <p>Three restaurants cater to visitors craving familiar comfort food — from burgers and sandwiches to classic breakfast plates. Great for families and picky eaters.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fd79a8,#e17055);">
+            <img src="Images/ExperienceBamboo.jpeg" alt="Pan-Asian cuisine" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Pan-Asian</span>
+            <h3>Pan-Asian Cuisine</h3>
+            <p>Two restaurants offer a range of Pan-Asian dishes including sushi, ramen, Thai-inspired plates, and more — a flavorful change of pace during a longer stay on the island.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#55efc4,#00b894);">
+            <img src="Images/ExperienceStore.jpeg" alt="Grocery store" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Groceries</span>
+            <h3>Markets &amp; Grocery Stores</h3>
+            <p>Taniti has two supermarkets, two smaller grocery stores, and one 24-hour convenience store for snacks and essentials. Perfect for self-catering travelers or those staying in B&amp;Bs.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== ENTERTAINMENT TAB ===== -->
+      <div class="tab-content" id="tab-entertainment" role="tabpanel">
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#6ab04c,#2d6a4f);">
+            <img src="Images/ExperienceZip.jpeg" alt="Zip-lining in the rainforest" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Adventure</span>
+            <h3>Zip-Lining</h3>
+            <p>Fly through the canopy of Taniti's lush rainforest on an exhilarating zip-line course. One of the island's most popular activities, located in Merriton Landing on the north side of Yellow Leaf Bay.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#4db6e8,#0b3d6b);">
+            <img src="Images/ExperienceSnorkel.jpeg" alt="Snorkeling" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Water</span>
+            <h3>Snorkeling</h3>
+            <p>Discover the vibrant underwater world surrounding Taniti's coastline. Equipment rentals and guided snorkeling tours are available for all skill levels right from Yellow Leaf Bay.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fd79a8,#6c5ce7);">
+            <img src="Images/ExperienceMerriton.jpeg" alt="Dance club" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Nightlife</span>
+            <h3>Dance Club</h3>
+            <p>Taniti recently opened a new dance club in the Merriton Landing area, quickly becoming a favorite evening destination for visitors. Note: alcohol service ends at midnight by law.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fdcb6e,#e17055);">
+            <img src="Images/ExperiencePub.jpeg" alt="Pubs and microbrewery" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Nightlife</span>
+            <h3>Pubs &amp; Microbrewery</h3>
+            <p>Several pubs are scattered throughout Taniti City, including a craft microbrewery offering locally brewed beers alongside light snacks. A relaxed spot to unwind after a day of exploring.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7);">
+            <img src="Images/ExperienceTheater.jpeg" alt="Movie theater" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Leisure</span>
+            <h3>Movie Theater</h3>
+            <p>Catch a film at Taniti's local movie theater, showing a rotating selection of international and regional films. A great option for a relaxing evening or a rainy afternoon.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#81ecec,#00b894);">
+            <img src="Images/ExperienceArcade.jpeg" alt="Arcade" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Leisure</span>
+            <h3>Arcade &amp; Bowling</h3>
+            <p>For a fun, casual outing, Taniti has both an arcade and a bowling alley. Popular with families and groups, both are located in the Merriton Landing entertainment district.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#dfe6e9,#74b9ff);">
+            <img src="Images/ExperienceArt.jpeg" alt="Art galleries" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Arts</span>
+            <h3>Art Galleries</h3>
+            <p>Browse a selection of local and regional artwork at Taniti's art galleries. Indigenous crafts, paintings, and sculpture are featured, with many pieces available for purchase as unique souvenirs.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#55efc4,#2d6a4f);">
+            <img src="Images/ExperienceHeli.jpeg" alt="Helicopter tour" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Adventure</span>
+            <h3>Helicopter Rides</h3>
+            <p>See the entire island from above on a scenic helicopter tour. Operators offer routes over the volcano, rainforest, and coastline — an unforgettable way to experience Taniti's landscape.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== SIGHTSEEING TAB ===== -->
+      <div class="tab-content" id="tab-sightseeing" role="tabpanel">
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#ffeaa7,#e17055);">
+            <img src="Images/SightSeeBeach1.jpeg" alt="Yellow Leaf Bay beaches" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Beach</span>
+            <h3>Yellow Leaf Bay Beaches</h3>
+            <p>The white, sandy beaches encircling Yellow Leaf Bay are the crown jewel of Taniti. Most tourists spend the bulk of their time here, enjoying the calm clear waters and scenic native architecture of Taniti City nearby.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#e17055,#d63031);">
+            <img src="Images/ExpVolcano.jpeg" alt="Active volcano" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3>The Active Volcano</h3>
+            <p>One of Taniti's most dramatic attractions, the island's small active volcano draws visitors from around the world. Guided hikes to the summit offer breathtaking views across the entire island and surrounding Pacific.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#55efc4,#0b3d6b);">
+            <img src="Images/ExpRainforest.jpeg" alt="Rainforest hike" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Nature</span>
+            <h3>Rainforest Hikes</h3>
+            <p>Taniti's lush tropical rainforest covers much of the island's interior and is best explored on foot. Guided hike tours wind through dense canopy, past streams, and alongside rare native flora and fauna.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#dfe6e9,#74b9ff);">
+            <img src="Images/ExpMuse.jpeg" alt="Local history museum" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Culture</span>
+            <h3>Local History Museum</h3>
+            <p>Taniti City's local history museum tells the story of the island's indigenous people through artifacts, photography, and cultural displays. A must-visit for anyone wanting to understand Taniti beyond the beaches.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#4db6e8,#0b3d6b);">
+            <img src="Images/ExpTour.jpeg" alt="Boat and bus tours" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Tour</span>
+            <h3>Boat &amp; Bus Island Tours</h3>
+            <p>Guided boat and bus tours provide an easy way to see Taniti's highlights in a single day — from the harbor and rocky coastline to the rainforest interior and Merriton Landing.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background:linear-gradient(135deg,#fdcb6e,#6ab04c);">
+            <img src="Images/ExpFish.jpeg" alt="Chartered fishing tour" /> 
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Adventure</span>
+            <h3>Chartered Fishing Tours</h3>
+            <p>Set out into the Pacific on a chartered fishing excursion led by experienced local captains. Whether you're an experienced angler or a first-timer, this is a unique way to connect with Taniti's fishing heritage.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Visit <span>Taniti</span></div>
+        <p style="font-size:0.88rem;margin-top:0.5rem;max-width:280px;">
+          The official tourism board of Taniti Island. Inspiring travel, preserving paradise.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="stay.html">Stay</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Taniti Tourism Board. All rights reserved.
+      <br>All images on this site are AI-generated. Source: Google Gemini (AI image generator), retrieved March 27, 2026.
+    </div>
+  </footer>
+
+  <script src="tabs.js"></script>
+</body>
+</html>
